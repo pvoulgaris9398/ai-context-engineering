@@ -5,7 +5,7 @@ This is the central index for my personal context, projects, and preferences. Ch
 ## 👤 Core Profile
 
 - **Global Preferences:** Rules for tone, formatting, and language style.
-  - [Raw File Link](https://githubusercontent.com)
+  - [profile.md](https://raw.githubusercontent.com/pvoulgaris9398/ai-context-engineering/refs/heads/main/profile.md?token=GHSAT0AAAAAAD4VR4VL5XEXEL3I3UWVZJZE2RYO2RQ)
 
 ## 💻 Active Tech Projects
 
