@@ -1,0 +1,13 @@
+{
+    "recommendations": [
+        "mermaidchart.vscode-mermaid-chart",
+        "bierner.github-markdown-preview",
+        "davidanson.vscode-markdownlint",
+        "vstirbu.vscode-mermaid-preview",
+        "bierner.markdown-yaml-preamble",
+        "bierner.markdown-mermaid",
+        "bierner.markdown-preview-github-styles",
+        "bierner.markdown-footnotes",
+        "bierner.markdown-emoji"
+    ]
+}
