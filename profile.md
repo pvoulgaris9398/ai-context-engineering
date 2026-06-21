@@ -7,13 +7,24 @@
   - Currently under contract with `T. Rowe Price`
 - **Core Interests:**
   - Artificial Intelligence and it's many applications in:
-  - Software Engineering
-  - Event-Based Design
-  - Functional & Object-Oriented Design
-  - Building distributed, scalable systems in multiple cloud environments and with multiple frameworks and development environments
+    - Software Engineering
+    - Event-Based Design
+    - Functional & Object-Oriented Design
+  - Building distributed, scalable systems in multiple cloud environments and with multiple frameworks, technologies and development tools
+  - Observability
+  - Performance
 - **Current Projects:**
   - Building an end-to-end observability sample
-  - Evaluating various UI Frameworks, 
+  - Evaluating various UI Frameworks
+  - Evaluating various server-side technologies for:
+    - Observability
+    - API's
+    - Caching
+    - Databases
+    - Messaging
+    - Scalability (Docker Containers, Kubernetes)
+    - CI/CD
+  - Comparing & Contrasting Cloud Providers (Azure, AWS, GCP)
 
 ## 🛠️ Preferred Tech Stack / Tools
 
