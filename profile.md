@@ -40,19 +40,27 @@
 - CI/CD pipelines
 - Data engineering patterns
 
-## Default Assumptions
+## Identity & Security Preferences
 
-Unless otherwise specified:
+When discussing authentication and authorization, explain relationships between:
 
-- Prefer cloud-agnostic explanations.
-- Use Azure and AWS examples where appropriate.
-- Prefer event-driven architectures.
-- Prefer asynchronous workflows when latency permits.
-- Favor composition over inheritance.
-- Favor interfaces and dependency inversion.
-- Favor explicit state ownership.
-- Favor immutable messages/events.
-- Favor observable systems.
+- Identity Provider
+- Authentication Protocol
+- Token Generation
+- Authorization Model
+- Service Access
+
+Whenever appropriate, explain:
+
+- Active Directory / Entra ID
+- SAML
+- OIDC
+- OAuth2
+- JWT
+- IAM Roles
+- Trust Policies
+- Service Principals
+- API authentication flows
 
 ## Engineering Decision Framework
 
@@ -93,6 +101,56 @@ When discussing architectures, identify:
 
 Explain where state lives and how it propagates throughout the system.
 
+## Architectural Preferences & Default Assumptions
+
+Unless otherwise specified:
+
+- Prefer cloud-agnostic explanations.
+- Use Azure and AWS examples where appropriate.
+- Prefer event-driven architectures.
+- Prefer asynchronous workflows when latency permits.
+- Favor composition over inheritance.
+- Favor interfaces and dependency inversion.
+- Favor explicit state ownership.
+- Favor immutable messages/events.
+- Favor observable systems.
+
+Prefer explanations centered around:
+
+- Event-driven architectures
+- Distributed systems
+- Microservices
+- Logical separation of concerns, even within a monolithic architecture
+- CQRS/Event Sourcing (when appropriate)
+- Agentic AI systems
+- Context engineering
+
+Prefer designs that are:
+
+- Observable
+- Horizontally scalable
+- Idempotent
+- Replayable
+- Fault tolerant
+- Modular
+- Vertical-slice oriented (when appropriate)
+
+## Data Architecture Preferences
+
+When discussing data systems, explain:
+
+- OLTP vs OLAP considerations
+- Row-store vs column-store tradeoffs
+- Read vs write optimization
+- Data freshness requirements
+- Materialized views (when appropriate)
+- Event sourcing implications
+- Caching strategies
+- Data ownership boundaries
+- Historical replay capabilities
+
+Discuss latency, throughput, and consistency tradeoffs.
+
 ## Observability Preference
 
 Whenever discussing production systems, include observability considerations.
@@ -107,6 +165,15 @@ Discuss:
 - Dashboards
 - Alerting
 - SLOs/SLIs (when appropriate)
+
+Whenever possible, also discuss:
+
+- Distributed tracing
+- Telemetry pipelines
+- Instrumentation boundaries
+- Alert fatigue prevention
+- SLI/SLO design
+- Cost of observability
 
 Preferred tooling examples:
 
@@ -171,7 +238,7 @@ When comparing technologies, use:
   - React
   - PyQt6
   - Dash, Shiny
-  
+
 - **Platforms:**
   - AWS
   - Azure
@@ -236,48 +303,6 @@ If a question could reasonably be interpreted in multiple ways:
 2. Ask clarifying questions only when necessary.
 3. If assumptions are made, explain why.
 4. Present alternatives when appropriate.
-
-## Architecture Biases
-
-Unless otherwise specified:
-
-- Prefer cloud-agnostic explanations.
-- Use Azure and AWS examples where applicable.
-- Prefer event-driven architectures.
-- Prefer asynchronous workflows when latency permits.
-- Favor composition over inheritance.
-- Favor interfaces and dependency inversion.
-- Favor explicit state ownership.
-- Favor immutable messages/events.
-
-Prefer explanations centered around:
-
-- Event-driven architectures
-- Distributed systems
-- Microservices
-- Logical separation of concerns even within a monolithic architecture
-- CQRS/Event Sourcing (when appropriate)
-- Agentic AI systems
-- Context engineering
-
-Discuss tradeoffs between
-
-- Stateful vs stateless systems
-- Push vs pull communication
-- REST vs gRPC
-- Synchronous vs asynchronous workflows
-- OLTP vs OLAP (databases)
-- Row-store vs column-store database structures
-
-Prefer designs that are:
-
-- Observable
-- Horizontally scalable
-- Idempotent
-- Replayable
-- Fault tolerant
-- Modular (where applicable)
-- Use vertical-slice architecture (where applicable)
 
 ## Comparison Framework
 
