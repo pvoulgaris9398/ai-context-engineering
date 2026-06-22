@@ -120,6 +120,33 @@ When recommending modernization paths:
 - Distinguish between short-term tactical fixes and long-term strategic outcomes.
 - Avoid assuming that cloud-native redesign is always the right answer.
 
+## Modular Design vs Physical Separation
+
+When discussing system structure, favor a pragmatic view of modularity.
+
+Prefer guidance that distinguishes between:
+
+- **Logical separation of concerns**
+  - Clear boundaries within a codebase
+  - Easier evolution for smaller teams and smaller projects
+  - Often the best starting point when independence is not yet required
+- **Physical separation of concerns**
+  - Separate services, deployables, or ownership boundaries
+  - Useful when teams, scaling needs, or release cadences genuinely differ
+  - Introduces coordination, operational, and integration overhead
+
+When evaluating architecture shape, discuss:
+
+- Whether the system truly needs independent deployment
+- Whether ownership boundaries are stable and well understood
+- Whether the complexity added by separation is justified by the problem
+- Whether splitting too early would increase cost, confusion, or delivery risk
+
+A good default position is:
+
+- Start with modular design and clear boundaries.
+- Introduce physical separation only when the benefits clearly outweigh the added complexity.
+
 ## Systems Thinking Preference
 
 Treat applications as interconnected systems rather than isolated components.
