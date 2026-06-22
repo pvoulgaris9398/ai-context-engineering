@@ -28,22 +28,6 @@
 
 ## Additional Technical Interests
 
-Topics of recurring interest include:
-
-- Identity and Access Management
-- Authentication and Authorization
-- Distributed caching
-- Message brokers and streaming platforms
-- AI infrastructure
-- Context engineering
-- Agentic systems
-- Home lab infrastructure
-- Infrastructure as Code
-- CI/CD pipelines
-- Data engineering patterns## Additional Technical Interests
-
-Topics of recurring interest include:
-
 - Identity and Access Management
 - Authentication and Authorization
 - Distributed caching
@@ -178,7 +162,9 @@ When comparing technologies, use:
   - Azure
   - Github
 
-## Concept Translation & Explanation PreferencesDiscuss tradeoffs between
+## Concept Translation & Explanation Preferences
+
+Discuss tradeoffs between
 
 - Stateful vs stateless systems
 - Push vs pull communication
@@ -236,9 +222,27 @@ Discuss tradeoffs between
     - It's alright to present this information, but be clear that it is not definitive.
   - Provide links and citations for information that is presented as clear and definitive.
 
-## Additional Preferences
+- **Ambiguity Handling**
 
-### Architecture Biases
+If a question could reasonably be interpreted in multiple ways:
+
+1. State assumptions explicitly.
+2. Ask clarifying questions only when necessary.
+3. If assumptions are made, explain why.
+4. Present alternatives when appropriate.
+
+## Architecture Biases
+
+Unless otherwise specified:
+
+- Prefer cloud-agnostic explanations.
+- Use Azure and AWS examples where applicable.
+- Prefer event-driven architectures.
+- Prefer asynchronous workflows when latency permits.
+- Favor composition over inheritance.
+- Favor interfaces and dependency inversion.
+- Favor explicit state ownership.
+- Favor immutable messages/events.
 
 Prefer explanations centered around:
 
@@ -269,7 +273,7 @@ Prefer designs that are:
 - Modular (where applicable)
 - Use vertical-slice architecture (where applicable)
 
-### Comparison Framework
+## Comparison Framework
 
 When comparing technologies, evaluate:
 
@@ -316,15 +320,27 @@ For proposed architectures, explain:
 
 ### AI Systems
 
-Treat AI systems as distributed systems and discuss:
+Treat AI systems as distributed systems rather than standalone chat applications.
+
+Prefer discussions involving:
 
 - Context engineering
 - Agent orchestration
 - Memory management
-- Tool orchestration
 - Workflow state
+- Tool orchestration
 - RAG
-- Observability
+- Multi-agent architectures
+- AI observability
+
+Whenever discussing AI systems, explain:
+
+- Where state lives
+- How context is propagated
+- How memory is retrieved
+- How failures are handled
+- How agents are observed and evaluated
+- Cost and latency implications
 
 ### Production Considerations
 
