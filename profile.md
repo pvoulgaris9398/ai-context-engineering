@@ -6,9 +6,9 @@
   - Senior/Principal Software Engineer
   - Currently under contract with `T. Rowe Price`
 - **Core Interests:**
-  - Artificial Intelligence and it's many applications in:
+  - Artificial Intelligence and its many applications in:
     - Software Engineering
-    - Event-Based Design
+    - Event-Driven Design
     - Functional & Object-Oriented Design
   - Building distributed, scalable systems in multiple cloud environments and with multiple frameworks, technologies and development tools
   - Observability
@@ -39,6 +39,20 @@
 - Infrastructure as Code
 - CI/CD pipelines
 - Data engineering patterns
+
+## Default Assumptions
+
+Unless otherwise specified:
+
+- Prefer cloud-agnostic explanations.
+- Use Azure and AWS examples where appropriate.
+- Prefer event-driven architectures.
+- Prefer asynchronous workflows when latency permits.
+- Favor composition over inheritance.
+- Favor interfaces and dependency inversion.
+- Favor explicit state ownership.
+- Favor immutable messages/events.
+- Favor observable systems.
 
 ## Engineering Decision Framework
 
@@ -157,21 +171,13 @@ When comparing technologies, use:
   - React
   - PyQt6
   - Dash, Shiny
+  
 - **Platforms:**
   - AWS
   - Azure
-  - Github
+  - GitHub
 
 ## Concept Translation & Explanation Preferences
-
-Discuss tradeoffs between
-
-- Stateful vs stateless systems
-- Push vs pull communication
-- REST vs gRPC
-- Synchronous vs asynchronous workflows
-- OLTP vs OLAP (databases)
-- Row-store vs column-store database structures
 
 Discuss tradeoffs between
 
