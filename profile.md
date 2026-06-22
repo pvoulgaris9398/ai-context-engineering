@@ -26,37 +26,133 @@
     - CI/CD
   - Comparing & Contrasting Cloud Providers (Azure, AWS, GCP)
 
-## Architectural Preferences
+## Additional Technical Interests
 
-### Prefer examples that emphasize
+Topics of recurring interest include:
 
-- Event-driven architectures
-- Distributed systems
-- Microservices
-- Logical separation of concerns even within a monolithic architecture
-- CQRS and Event Sourcing (when appropriate)
-- Async messaging patterns
-- Workflow orchestration
-- Agent-based architectures
-- Context engineering for AI systems
+- Identity and Access Management
+- Authentication and Authorization
+- Distributed caching
+- Message brokers and streaming platforms
+- AI infrastructure
+- Context engineering
+- Agentic systems
+- Home lab infrastructure
+- Infrastructure as Code
+- CI/CD pipelines
+- Data engineering patterns## Additional Technical Interests
 
-### Discuss tradeoffs between
+Topics of recurring interest include:
 
-- Stateful vs stateless systems
-- Push vs pull communication
-- REST vs gRPC
-- Synchronous vs asynchronous workflows
-- OLTP vs OLAP (databases)
-- Row-store vs column-store database structures
+- Identity and Access Management
+- Authentication and Authorization
+- Distributed caching
+- Message brokers and streaming platforms
+- AI infrastructure
+- Context engineering
+- Agentic systems
+- Home lab infrastructure
+- Infrastructure as Code
+- CI/CD pipelines
+- Data engineering patterns
 
-### Prefer systems that are
+## Engineering Decision Framework
 
-- Observable
-- Horizontally scalable
-- Idempotent
-- Fault tolerant
-- Replayable
-- Independently deployable
+When evaluating architectures or technologies:
+
+Always discuss:
+
+- Problem being solved
+- Complexity introduced
+- Build vs buy considerations
+- Operational overhead
+- Local development experience
+- Deployment complexity
+- Security implications
+- Observability implications
+- Scaling characteristics
+- Cost considerations
+- Vendor lock-in
+- Long-term maintainability
+
+Prefer explicit tradeoffs over declaring a single "best" solution.
+
+State assumptions when recommendations depend on workload characteristics.
+
+## Systems Thinking Preference
+
+Treat applications as interconnected systems rather than isolated components.
+
+When discussing architectures, identify:
+
+- Data flow
+- Control flow
+- Event flow
+- State ownership
+- Failure boundaries
+- Communication boundaries
+- Ownership boundaries
+
+Explain where state lives and how it propagates throughout the system.
+
+## Observability Preference
+
+Whenever discussing production systems, include observability considerations.
+
+Discuss:
+
+- Structured logging
+- Metrics
+- Traces
+- Correlation IDs
+- Health checks
+- Dashboards
+- Alerting
+- SLOs/SLIs (when appropriate)
+
+Preferred tooling examples:
+
+- OpenTelemetry
+- Application Insights
+- Grafana
+- Prometheus
+- Jaeger
+
+## Code Example Preference
+
+Prefer complete, minimal, runnable examples over isolated snippets.
+
+Examples should include:
+
+- Project structure
+- Interfaces
+- Dependency injection
+- Configuration
+- Error handling
+- Logging
+- Unit test examples (when appropriate)
+
+Use realistic naming instead of placeholders.
+
+## Preferred Comparison Output
+
+When comparing technologies, use:
+
+1. Executive Summary
+
+2. Architecture Diagram
+
+3. Comparison Matrix
+
+4. Local Development Experience
+
+5. Production Considerations
+
+6. Recommended Use Cases
+
+7. Anti-Patterns / When Not To Use
+
+8. Suggested Next Steps
 
 ## 🛠️ Preferred Tech Stack / Tools
 
@@ -82,7 +178,23 @@
   - Azure
   - Github
 
-## Concept Translation Preference
+## Concept Translation & Explanation PreferencesDiscuss tradeoffs between
+
+- Stateful vs stateless systems
+- Push vs pull communication
+- REST vs gRPC
+- Synchronous vs asynchronous workflows
+- OLTP vs OLAP (databases)
+- Row-store vs column-store database structures
+
+Discuss tradeoffs between
+
+- Stateful vs stateless systems
+- Push vs pull communication
+- REST vs gRPC
+- Synchronous vs asynchronous workflows
+- OLTP vs OLAP (databases)
+- Row-store vs column-store database structures
 
 ### When introducing a new technology
 
@@ -133,9 +245,19 @@ Prefer explanations centered around:
 - Event-driven architectures
 - Distributed systems
 - Microservices
+- Logical separation of concerns even within a monolithic architecture
 - CQRS/Event Sourcing (when appropriate)
 - Agentic AI systems
 - Context engineering
+
+Discuss tradeoffs between
+
+- Stateful vs stateless systems
+- Push vs pull communication
+- REST vs gRPC
+- Synchronous vs asynchronous workflows
+- OLTP vs OLAP (databases)
+- Row-store vs column-store database structures
 
 Prefer designs that are:
 
@@ -162,16 +284,6 @@ When comparing technologies, evaluate:
 - Vendor lock-in
 - Support and implementation details in various supported vendor cloud environments (where applicable)
 - Production suitability
-
-### Explanation Preferences
-
-For new concepts, always explain:
-
-- What problem it solves
-- What existing technology it is analogous to
-- Where it fits in an architecture
-- What it replaces
-- When not to use it
 
 ### Diagram Preference
 
